@@ -16,14 +16,13 @@ public class HomeController {
     }
 
     @RequestMapping("add")
-    public ModelAndView add(@RequestParam("num1") int i, @RequestParam("num2") int j, HttpSession session ){
+    public ModelAndView add(@RequestParam("num1") int i, @RequestParam("num2") int j ){
         // can have any method name
 
         ModelAndView mv = new ModelAndView();
         mv.setViewName("result.html");
         int num3 = i+j;
-
-        session.setAttribute("num3", num3);
+        mv.addObject("num3", num3);
         return mv;
 
     }
