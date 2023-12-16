@@ -19,8 +19,9 @@ public class HomeController {
     public ModelAndView add(@RequestParam("num1") int i, @RequestParam("num2") int j ){
         // can have any method name
 
+        System.out.println("In add");
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("result.html");
+        mv.setViewName("result.jsp");
         int num3 = i+j;
         mv.addObject("num3", num3);
         return mv;
