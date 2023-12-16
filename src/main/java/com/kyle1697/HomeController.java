@@ -12,7 +12,7 @@ public class HomeController {
     @RequestMapping("/")
     public String home(){
         System.out.println("Home page Requested");
-        return "index.html";
+        return "index";
     }
 
     @RequestMapping("add")
@@ -20,8 +20,7 @@ public class HomeController {
         // can have any method name
 
         System.out.println("In add");
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("result.jsp");
+        ModelAndView mv = new ModelAndView("result");
         int num3 = i+j;
         mv.addObject("num3", num3);
         return mv;
