@@ -7,9 +7,9 @@
 <body>
     Welcome to SPRING MVC BOOT first project
 
-    <form action="add">
-            Enter 1st number : <input type="text" name="num1">
-            Enter 2nt number : <input type="text" name="num2">
+    <form action="addAlien">
+            Enter your id : <input type="text" name="aid">
+            Enter your name : <input type="text" name="aname">
             <input type="submit">
     </form>
 </body>

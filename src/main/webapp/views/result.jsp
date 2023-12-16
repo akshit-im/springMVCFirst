@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    Result is : ${num3}
+    Result is : ${alien}
 
 </body>
 </html>
