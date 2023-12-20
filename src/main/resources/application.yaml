@@ -4,3 +4,11 @@ spring:
     view:
       suffix: .jsp
       prefix: /views/
+  jpa:
+    hibernate:
+       dialect: org.hibernate.dialect.PostgresSQL5dialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Demo
+    username: postgres
+    password: 1697
+
